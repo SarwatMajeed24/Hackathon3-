@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ShoppingCartModal from "./components/ShoppingCartModel";
+import CartProvider from "./components/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body 
+      
+      className={inter.className}>
+    <CartProvider>
+    {/* // mode="checkout-session"
+    // stripe="pk_test_51QbIDhJcDgLmmTXZk54I4oVetsHcWaHsFWshSasOff2JkWVr77YxxnOXhtu1RnmUb0WNGfYMkZfpRvjjlJuCQpp8007jOiKVcA"
+    // currency="USD"> */}
+   <Navbar />
+   <ShoppingCartModal />
+   {children}
+   <Footer />
+   </CartProvider></body>
     </html>
   );
 }
