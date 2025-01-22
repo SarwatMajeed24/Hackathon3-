@@ -1,0 +1,6 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks,,
+TC001,Validate product listing page,Open product page > check product grid,Products displayed correctly,Products displayed correctly,Passed,High,Sir Ameen Alam,All functional,,
+TC002,Test API error handling,API Successfully working,Fallback UI shows “All products”,Fallback UI displayed,Passed,Medium,Sir Ameen Alam,Error Handling Effectively,,
+TC003,Add to Cart  functionality,Add product to cart > Check Cary,Cart updates with added product,Cart updates as expected,Passed,High,Sir Ameen Alam,Works as expected,,
+TC004,Navigation Bar,Search for Laptop,Links are displayed,Correct result displayed,Passed,High,Sir Ameen Alam,Fully Functional,,
+TC005,Mobile Responsiveness,Resize browser to mobile view,Layout adjusts for mobile view,Layout adapts perfectly,Passed,Medium,Sir Ameen Alam,Responsive on all tested devices,,
