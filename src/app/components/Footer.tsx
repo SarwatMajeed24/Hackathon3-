@@ -1,23 +1,3 @@
-// import Link from 'next/link';
-// import React from 'react';
-
-// export default function Footer() {
-//   return (
-//     <footer className="bg-gray-800 text-white py-8">
-//       <div className="container mx-auto px-6">
-//         <div className="flex justify-between items-center">
-//           <p className="text-sm">&copy; {new Date().getFullYear()} My Marketplace. All rights reserved.</p>
-//           <ul className="flex space-x-6 text-sm">
-//             <li><Link href="/" className="hover:underline" >Privacy Policy</Link></li>
-//             <li><Link href="/" className="hover:underline">Terms of Service</Link></li>
-//             <li><Link href="/" className="hover:underline">Help</Link></li>
-//           </ul>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// }
-
 import Link from 'next/link';
 import React from 'react';
 import { FaGithub } from "react-icons/fa6";
