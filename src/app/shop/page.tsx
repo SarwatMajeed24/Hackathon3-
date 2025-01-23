@@ -1,4 +1,3 @@
-
 import ProductsPage from '../productListing/page'
 
 const Shop = () => {

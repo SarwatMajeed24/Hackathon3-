@@ -23,15 +23,4 @@ export default {
     },
   ],
 };
-// {
-//   "_type": "heroSlides",
-//   "title": "Slide Title",
-//   "subtitle": "Slide Subtitle",
-//   "image": {
-//     "asset": {
-//       "_ref": "image-asset-id"
-//     }
-//   }
-// }
-// ]
-// }
+
