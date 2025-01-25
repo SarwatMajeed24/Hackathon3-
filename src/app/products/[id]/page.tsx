@@ -13,7 +13,7 @@ export default async function ProductDetailPage({ params }: { params: { id: stri
       price,
       discountPercentage,
       sizes,
-      color,
+      colors,
       "imageUrl": image.asset->url
     }
   `,
