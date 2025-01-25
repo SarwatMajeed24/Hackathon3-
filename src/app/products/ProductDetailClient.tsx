@@ -7,23 +7,20 @@ import AddToBag from "@/app/components/AddToBag";
 import CheckoutNow from "@/app/components/CheckoutNow";
 
 export default function ProductDetailClient({ product }: { product: any }) {
-  // State for selected size and color
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
 
-  // Function to handle size selection
   const handleSizeSelect = (size: string) => {
     setSelectedSize(size);
   };
 
-  // Function to handle color selection
   const handleColorSelect = (color: string) => {
     setSelectedColor(color);
   };
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-yellow-100 via-orange-100 to-red-50 py-12 px-6">
-      <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row gap-6">
+      <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg p-6 flex flex-col lg:flex-row gap-6">
         {/* Product Image */}
         <div className="flex-1">
           <Image
@@ -37,17 +34,14 @@ export default function ProductDetailClient({ product }: { product: any }) {
 
         {/* Product Details */}
         <div className="flex-1">
-          {/* Product Name */}
-          <h1 className="text-3xl font-bold text-gray-800 mb-4">{product.name}</h1>
+          <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">{product.name}</h1>
 
-          {/* Product Description */}
-          <p className="text-lg text-gray-600 mb-6">{product.description}</p>
+          <p className="text-base lg:text-lg text-gray-600 mb-6">{product.description}</p>
 
-          {/* Sizes Section */}
           {product.sizes && product.sizes.length > 0 && (
             <div className="mb-6">
               <h2 className="text-lg font-bold text-gray-800 mb-2">Available Sizes:</h2>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 {product.sizes.map((size: string, index: number) => (
                   <button
                     key={index}
@@ -65,11 +59,10 @@ export default function ProductDetailClient({ product }: { product: any }) {
             </div>
           )}
 
-          {/* Colors Section */}
           {product.colors && product.colors.length > 0 && (
             <div className="mb-6">
               <h2 className="text-lg font-bold text-gray-800 mb-2">Available Colors:</h2>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 {product.colors.map((color: string, i: number) => (
                   <button
                     key={i}
@@ -88,13 +81,11 @@ export default function ProductDetailClient({ product }: { product: any }) {
             </div>
           )}
 
-          {/* Price */}
-          <p className="text-2xl font-semibold text-indigo-600 mb-6">
+          <p className="text-xl lg:text-2xl font-semibold text-indigo-600 mb-6">
             ${product.price.toFixed(2)}
           </p>
 
-          {/* Add to Cart and Checkout Buttons */}
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <AddToBag
               currency="USD"
               description={product.description}
@@ -103,8 +94,8 @@ export default function ProductDetailClient({ product }: { product: any }) {
               price={product.price}
               key={product._id}
               price_id={product.price_id}
-              size={selectedSize} // Pass selected size
-              color={selectedColor} // Pass selected color
+              size={selectedSize}
+              color={selectedColor}
             />
             <CheckoutNow
               currency="USD"
@@ -114,8 +105,8 @@ export default function ProductDetailClient({ product }: { product: any }) {
               price={product.price}
               key={product._id}
               price_id={product.price_id}
-              size={selectedSize} // Pass selected size
-              color={selectedColor} // Pass selected color
+              size={selectedSize}
+              color={selectedColor}
             />
           </div>
         </div>
