@@ -1,12 +1,4 @@
-// export default function CheckoutError() {
-//     return (
-//       <div className="h-screen flex items-center justify-center">
-//         <h2 className="text-xl text-red-500">Something went wrong...</h2>
-//       </div>
-//     );
-//   }
-  
-  import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { AlertTriangle } from "lucide-react";
 import Link from "next/link";
 
