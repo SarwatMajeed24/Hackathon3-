@@ -1,13 +1,13 @@
-Project Overview
+**Project Overview**
 
 This project contains the code base for an e-commerce marketplace developed during a 6-day hackathon. The goal of the project was to create a scalable, feature-rich e-commerce marketplace application using Next.js, sanity and mock API.  Below is the summary of daily activities and achievements.
 
-Day 1: Laying the Foundation
+**Day 1: Laying the Foundation**
 
-Objective: 
+**Objective:**
 Initiated the project setup and defined foundational elements for the marketplace.
 
-Achievements:
+**Achievements:**
 
 Initialized the Next.js project.
 
@@ -17,12 +17,12 @@ Finalized design and business goals for the marketplace.
 
 Created initial mockups and a project roadmap.
 
-Day 2: Planning the Technical Foundation
+**Day 2: Planning the Technical Foundation**
 
-Objective: 
+**Objective:** 
 Shifted focus from business planning to technical preparation.
 
-Achievements:
+**Achievements:**
 
 Designed the system architecture.
 
@@ -42,12 +42,12 @@ Drafted API endpoints for backend communication:
 
 Chose Stripe as the payment gateway and Ship Engine for third-party API integration.
 
-Day 3: Frontend Development
+**Day 3: Frontend Development**
 
-Objective:
+**Objective:**
  Developed the frontend for the marketplace.
 
-Achievements:
+**Achievements:**
 
 Implemented dynamic routing for individual product pages.
 
@@ -57,12 +57,12 @@ Integrated Sanity CMS for dynamic product content management.
 
 Added client-side state management for cart functionality using Context API.
 
-Day 4: Backend Integration
+**Day 4: Backend Integration**
 
-Objective:
+**Objective:**
  Integrated backend APIs and ensured smooth interaction between frontend and backend.
 
-Achievements:
+**Achievements:**
 
 Connected the frontend with Sanity CMS to fetch and display product data.
 
@@ -72,12 +72,12 @@ Set up Stripe payment gateway for secure transactions.
 
 Integrated Ship Engine API for shipment tracking.
 
-Day 5: Testing, Error Handling, and Refinement
+**Day 5: Testing, Error Handling, and Refinement**
 
-Objective: 
+**Objective:**
 Prepared the application for deployment by testing and refining all components.
 
-Achievements:
+**Achievements:**
 
 Conducted functional testing:
 
@@ -91,11 +91,11 @@ Ensured cross-browser compatibility and mobile responsiveness.
 
 Conducted security tests to safeguard sensitive data.
 
-Day 6: Deployment Preparation
+**Day 6: Deployment Preparation**
 
-Objective: Deployed the application to a staging environment.
+**Objective:** Deployed the application to a staging environment.
 
-Achievements:
+**Achievements:**
 
 Chose Vercel as the hosting platform.
 
@@ -107,7 +107,7 @@ Documented all activities, test cases, and deployment steps.
 
 Prepared the repository for public release with a structured folder hierarchy and README documentation.
 
-Deployment
+**Deployment**
 The application is hosted on Vercel. Visit the live site at your-live-site-url.
 
 Tech Stack
